@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>NodeJS & NPM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=792, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="shower/themes/bright/styles/screen.css">
+    <link rel="stylesheet" href="highlight/styles/github.css">
+    <style>h2.shout,
+h3.shout,
+header.shout {
+  text-align: center;
+  color: #000;
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  line-height: 1.2;
+  transform: translateY(-50%);
+}
+h2.shout h2,
+h3.shout h2,
+header.shout h2 {
+  margin-bottom: 30px;
+}
+h2.shout h3,
+h3.shout h3,
+header.shout h3 {
+  font-size: 40px;
+  font-weight: 100;
+}
+em {
+  font-style: normal !important;
+  color: #888;
+}
+h2.shout {
+  font-size: 70px;
+}
+h3.shout {
+  font-size: 40px;
+  font-weight: 100;
+}
+.img-wrapper {
+  width: 100%;
+  height: 470px;
+  position: relative;
+  top: 5px;
+  overflow: hidden;
+}
+.img-wrapper a {
+  background: transparent;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.img-wrapper a img {
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
+}
+notes {
+  display: none;
+}
+
+    </style>
+  </head>
+  <body class="list">
+    <header class="caption">
+      <h1>NodeJS & NPM</h1>
+    </header>
+    <section id="Cover" class="slide cover">
+      <div><img src="nodejs-pictures/nodejs-cover.jpg" alt=""></div>
+    </section>
+    <section class="slide">
+      <div><h2>NodeJS</h2>
+
+<p><strong>NodeJS</strong> — программная платформа, позволяющая запускать код на языке JavaScript вне браузера.</p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Применение NodeJS</h2>
+        <ul>
+          <li class="next">Веб-сервер</li>
+          <li class="next">Десктоп приложения</li>
+          <li class="next">Программирование микроконтроллеры :)</li>
+        </ul>
+        <ul>
+          <li class="next"><b>Инструменты для фронт-энда</b></li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Из чего состоит NodeJS?</h2>
+        <h3 class="shout">Node JS = V8 + I/O + Библиотеки</h3>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Из чего состоит NodeJS?</h2>
+        <h3 class="shout">Node JS = <mark>V8</mark> + I/O + Библиотеки</h3>
+      </div>
+    </section>
+    <section class="slide">
+      <div><h2>Альтернативы V8</h2>
+
+<ul><li>JSC (Mac OS, Safari)</li><li>WSH (Windows)</li></ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Из чего состоит NodeJS?</h2>
+        <h3 class="shout">Node JS = <mark>V8</mark> + I/O + Библиотеки</h3>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Из чего состоит NodeJS?</h2>
+        <h3 class="shout">Node JS = V8 + <mark>I/O</mark> + Библиотеки</h3>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Из чего состоит NodeJS?</h2>
+        <h3 class="shout">Node JS = V8 + I/O + <mark>Библиотеки</mark></h3>
+      </div>
+    </section>
+    <section class="slide">
+      <div><h2>NodeJS</h2>
+
+<ul><li>Среда исполнения</li><li>Полезные библиотеки на все случаи жизни</li></ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <header class="shout">
+          <h2><b>NPM</b> — NodeJS Package Manager</h2>
+          <h3><a href="https://www.npmjs.com">https://www.npmjs.com</a></h3>
+        </header>
+      </div>
+    </section>
+    <section class="slide">
+      <div><h2>NPM</h2>
+
+<p><strong>NPM</strong>  — конскольная утилита, которая предоставляет доступ к разным пакетам сторонних разработчиков.</p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Поиск пакета</h2>
+        <h3 class="shout">npm <mark>search</mark> <em>name</em></h3>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Просмотр пакета</h2>
+        <h3 class="shout">npm <mark>view</mark> <em>name</em></h3>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Установка пакета</h2>
+        <h3 class="shout">npm <mark>install</mark> <em>name</em></h3>
+      </div>
+    </section>
+    <section class="slide">
+      <div><h2>Типы зависимостей</h2>
+
+<ul><li>Основные (dependencies)</li><li>Для разработки (devDependencies)</li></ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div><h2>Пути установки пакета</h2>
+
+<ul><li>Локально</li><li>Глобально</li></ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Установка пакета глобально</h2>
+        <h3 class="shout">npm install <mark>-g</mark> <em>name</em></h3>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Установка определенной версии пакета</h2>
+        <h3 class="shout">npm install <em>name</em><mark>@1.0.2</mark></h3>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Обновление пакета</h2>
+        <h3 class="shout">npm <mark>update</mark> <em>name</em></h3>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Удаление пакета</h2>
+        <header class="shout">
+          <h3>npm <mark>uninstall</mark> <em>name</em></h3>
+          <h3>npm <mark>remove</mark> <em>name</em></h3>
+        </header>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Создание пакета</h2>
+        <h3 class="shout">npm <mark>init</mark></h3>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Установка пакета</h2>
+        <p>C сохранением зависимости в package.json</p>
+        <h3 class="shout">npm install <em>name</em> <mark>--save</mark> </h3>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Установка пакета</h2>
+        <p>C сохранением dev-зависимости в package.json</p>
+        <h3 class="shout">npm install <em>name</em> <mark>--save-dev</mark> </h3>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Восстановление пакетов</h2>
+        <h3 class="shout">npm <mark>install</mark></h3>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2 class="shout">Вопросы?</h2>
+      </div>
+    </section>
+    <div class="progress">
+      <div></div>
+    </div>
+    <script src="highlight/highlight.pack.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+      
+    </script>
+    <script src="shower/shower.min.js"></script>
+  </body>
+</html>
